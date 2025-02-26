@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "银行账号&开户行&开户行账户关系维护表",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "ztfi0001"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_DBFFE24615488AAF28D899B1D44EFC3DC6B2ED69_TM",
+    "semanticObject": "ztfi_0001",
+    "action": "maintain",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_DBFFE24615488AAF28D899B1D44EFC3DC6B2ED69_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "银行账号&开户行&开户行账户关系维护表"
+      }
+    }
+  ]
+}

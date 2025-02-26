@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "管理货币和银行科目",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "ztfi0002"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_CCF1C6BEC32204143DC23C57A14640A0678B276C_TM",
+    "semanticObject": "ZTFI_0002",
+    "action": "MAINTAIN",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_CCF1C6BEC32204143DC23C57A14640A0678B276C_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "管理货币和银行科目"
+      }
+    }
+  ]
+}

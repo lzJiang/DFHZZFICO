@@ -70,6 +70,7 @@ FUNCTION zzfm_fi_001.
          b~costcenter,
          b~validitystartdate,
          b~validityenddate,
+         a~yy1_totalamount_faa as totalamount,
          b~yy1_asset_fab AS assetuser
     FROM i_fixedasset WITH PRIVILEGED ACCESS AS a
     LEFT OUTER JOIN i_fixedassetassgmt WITH PRIVILEGED ACCESS AS b
@@ -86,6 +87,8 @@ FUNCTION zzfm_fi_001.
   LOOP AT lt_fixedasset INTO DATA(ls_fixedasset).
     CLEAR:ls_out.
     MOVE-CORRESPONDING ls_fixedasset TO ls_out.
+
+    CONDENSE ls_out-totalamount NO-GAPS.
     APPEND ls_out TO lt_out.
   ENDLOOP.
 

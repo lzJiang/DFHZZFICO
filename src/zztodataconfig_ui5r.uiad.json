@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "UI5通用ODATA接口配置",
+    "originalLanguage": "zh",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zztodataconfig"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_98D1706236FA8FE4FEF4E0351F6E745038194172_TM",
+    "semanticObject": "ZZT_ODATA_CONFIG",
+    "action": "MAINTAIN",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_98D1706236FA8FE4FEF4E0351F6E745038194172_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "UI5通用ODATA接口配置"
+      }
+    }
+  ]
+}

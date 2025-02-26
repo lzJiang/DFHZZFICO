@@ -13,31 +13,8 @@ ENDCLASS.
 
 
 
-CLASS zzcl_job_fi001 IMPLEMENTATION.
+CLASS ZZCL_JOB_FI001 IMPLEMENTATION.
 
-  METHOD if_oo_adt_classrun~main.
-
-    DATA  et_parameters TYPE if_apj_rt_exec_object=>tt_templ_val  .
-
-    et_parameters = VALUE #(
-        ( selname = 'PROJECT'
-          kind = if_apj_dt_exec_object=>select_option
-          sign = 'I'
-          option = 'EQ'
-          low = 'DFH-2024-YF-002' )
-         ( selname = 'PROCESS'
-          kind = if_apj_dt_exec_object=>select_option
-          sign = 'I'
-          option = 'EQ'
-          low = '1' )
-      ).
-    TRY.
-        if_apj_rt_exec_object~execute( it_parameters = et_parameters ).
-      CATCH cx_root INTO DATA(job_scheduling_exception).
-              IF 1 = 1.
-          ENDIF.
-    ENDTRY.
-  ENDMETHOD.
 
   METHOD if_apj_dt_exec_object~get_parameters.
     et_parameter_def = VALUE #(
@@ -58,6 +35,7 @@ CLASS zzcl_job_fi001 IMPLEMENTATION.
 
 
   ENDMETHOD.
+
 
   METHOD if_apj_rt_exec_object~execute.
 
@@ -261,5 +239,30 @@ CLASS zzcl_job_fi001 IMPLEMENTATION.
     ENDTRY.
 
 
+  ENDMETHOD.
+
+
+  METHOD if_oo_adt_classrun~main.
+
+    DATA  et_parameters TYPE if_apj_rt_exec_object=>tt_templ_val  .
+
+    et_parameters = VALUE #(
+        ( selname = 'PROJECT'
+          kind = if_apj_dt_exec_object=>select_option
+          sign = 'I'
+          option = 'EQ'
+          low = 'DFH-2024-YF-002' )
+         ( selname = 'PROCESS'
+          kind = if_apj_dt_exec_object=>select_option
+          sign = 'I'
+          option = 'EQ'
+          low = '1' )
+      ).
+    TRY.
+        if_apj_rt_exec_object~execute( it_parameters = et_parameters ).
+      CATCH cx_root INTO DATA(job_scheduling_exception).
+              IF 1 = 1.
+          ENDIF.
+    ENDTRY.
   ENDMETHOD.
 ENDCLASS.

@@ -13,24 +13,8 @@ ENDCLASS.
 
 
 
-CLASS zzcl_job_fi002 IMPLEMENTATION.
-  METHOD if_oo_adt_classrun~main.
+CLASS ZZCL_JOB_FI002 IMPLEMENTATION.
 
-    DATA  et_parameters TYPE if_apj_rt_exec_object=>tt_templ_val  .
-
-    et_parameters = VALUE #(
-        ( selname = 'TSTMPL'
-          kind = if_apj_dt_exec_object=>parameter
-          sign = 'I'
-          option = 'EQ'
-          low = '20241216021000.4605050' )
-      ).
-    TRY.
-        if_apj_rt_exec_object~execute( it_parameters = et_parameters ).
-      CATCH cx_root INTO DATA(job_scheduling_exception).
-        DATA(lv_text) = job_scheduling_exception->get_longtext( ).
-    ENDTRY.
-  ENDMETHOD.
 
   METHOD if_apj_dt_exec_object~get_parameters.
     et_parameter_def = VALUE #(
@@ -52,6 +36,7 @@ CLASS zzcl_job_fi002 IMPLEMENTATION.
 
 
   ENDMETHOD.
+
 
   METHOD if_apj_rt_exec_object~execute.
 
@@ -317,5 +302,24 @@ CLASS zzcl_job_fi002 IMPLEMENTATION.
 
 
 
+  ENDMETHOD.
+
+
+  METHOD if_oo_adt_classrun~main.
+
+    DATA  et_parameters TYPE if_apj_rt_exec_object=>tt_templ_val  .
+
+    et_parameters = VALUE #(
+        ( selname = 'TSTMPL'
+          kind = if_apj_dt_exec_object=>parameter
+          sign = 'I'
+          option = 'EQ'
+          low = '20241216021000.4605050' )
+      ).
+    TRY.
+        if_apj_rt_exec_object~execute( it_parameters = et_parameters ).
+      CATCH cx_root INTO DATA(job_scheduling_exception).
+        DATA(lv_text) = job_scheduling_exception->get_longtext( ).
+    ENDTRY.
   ENDMETHOD.
 ENDCLASS.
