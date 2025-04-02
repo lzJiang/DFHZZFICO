@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "收入成本明细表",
+    "originalLanguage": "zh",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "zui50017"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_F125F75F15A5ED8A5422895248A7B46FDC54B03B_TM",
+    "semanticObject": "zui50017",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_F125F75F15A5ED8A5422895248A7B46FDC54B03B_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "收入成本明细表"
+      }
+    }
+  ]
+}

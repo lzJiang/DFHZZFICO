@@ -1,0 +1,55 @@
+managed implementation in class ZBP_R_ZTFI_0006 unique;
+strict ( 2 );
+with draft;
+define behavior for ZR_ZTFI_0006 alias ZrZtfi0006
+persistent table zztfi_0006
+draft table zztfi_0006_d
+etag master LastChangedAt
+lock master total etag LastChangedAt
+authorization master ( global )
+
+{
+  field ( mandatory : create )
+  Itemno;
+  field ( mandatory : create )
+  Extend1;
+
+  field ( readonly )
+  CreatedBy,
+  CreatedAt,
+  LastChangedBy,
+  LastChangedAt;
+
+  field ( readonly : update )
+  Itemno;
+  field ( readonly : update )
+  Extend1;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  mapping for zztfi_0006
+    {
+      Itemno           = itemno;
+      Extend1          = extend1;
+      Koart            = koart;
+      Glaccount        = glaccount;
+      Altvrecnclnaccts = altvrecnclnaccts;
+      Debitcreditcode  = debitcreditcode;
+      Reasoncode       = reasoncode;
+      BhsFlag          = bhs_flag;
+      SeFlag           = se_flag;
+      CreatedBy        = created_by;
+      CreatedAt        = created_at;
+      LastChangedBy    = last_changed_by;
+      LastChangedAt    = last_changed_at;
+    }
+}

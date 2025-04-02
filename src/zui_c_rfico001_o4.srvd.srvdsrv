@@ -1,0 +1,4 @@
+@EndUserText.label: '收入成本明细表'
+define service ZUI_C_RFICO001_O4 {
+  expose ZC_RFICO001;
+}

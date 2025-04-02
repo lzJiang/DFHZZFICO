@@ -1,0 +1,33 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "CBS收款凭证配置表",
+    "originalLanguage": "zh",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "ztfi0006"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_855323F442ACF0C7F2616331B882829C906EE221_TM",
+    "semanticObject": "ZTFI_0006",
+    "action": "MAINTAIN",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_855323F442ACF0C7F2616331B882829C906EE221_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "CBS收款凭证配置表"
+      }
+    }
+  ]
+}

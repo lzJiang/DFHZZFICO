@@ -1,0 +1,178 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Extend1'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Extend1'
+annotate view ZC_ZTFI_0006 with
+{
+  @EndUserText.label: '款项性质'
+  @UI.facet: [ {
+    label: '常规信息',
+    id: 'GeneralInfo',
+    purpose: #STANDARD,
+    position: 10 ,
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 ,
+    label: '款项性质'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 ,
+    label: '款项性质'
+  } ]
+  @UI.selectionField: [ {
+    position: 10
+  } ]
+  Extend1;
+
+  @EndUserText.label: '序号'
+  @UI.identification: [ {
+    position: 5 ,
+    label: '序号'
+  } ]
+  @UI.lineItem: [ {
+    position: 5 ,
+    label: '序号'
+  } ]
+  @UI.selectionField: [ {
+    position: 5
+  } ]
+  Itemno;
+
+  @UI.identification: [ {
+    position: 20
+  } ]
+  @UI.lineItem: [ {
+    position: 20
+  } ]
+  @UI.selectionField: [ {
+    position: 20
+  } ]
+  @EndUserText : { label:  '项目类型'}
+  Koart;
+
+  @UI.identification: [ {
+    position: 30
+  } ]
+  @UI.lineItem: [ {
+    position: 30
+  } ]
+  @UI.selectionField: [ {
+    position: 30
+  } ]
+  @EndUserText : { label:  '总账科目'}
+  Glaccount;
+
+  @UI.identification: [ {
+    position: 40
+  } ]
+  @UI.lineItem: [ {
+    position: 40
+  } ]
+  @UI.selectionField: [ {
+    position: 40
+  } ]
+  @EndUserText : { label:  '备选统驭科目'}
+  Altvrecnclnaccts;
+
+  @UI.identification: [ {
+    position: 50
+  } ]
+  @UI.lineItem: [ {
+    position: 50
+  } ]
+  @UI.selectionField: [ {
+    position: 50
+  } ]
+  @EndUserText : { label:  '借贷码'}
+  Debitcreditcode;
+
+  @EndUserText.label: '原因代码'
+  @UI.identification: [ {
+    position: 60 ,
+    label: '原因代码'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 ,
+    label: '原因代码'
+  } ]
+  @UI.selectionField: [ {
+    position: 60
+  } ]
+  Reasoncode;
+  @EndUserText.label: '不含税标识'
+  @UI.identification: [ {
+    position: 63 ,
+    label: '不含税标识'
+  } ]
+  @UI.lineItem: [ {
+    position: 63 ,
+    label: '不含税标识'
+  } ]
+  @UI.selectionField: [ {
+    position: 63
+  } ]
+  BhsFlag;
+  @EndUserText.label: '税额标识'
+  @UI.identification: [ {
+    position: 66 ,
+    label: '税额标识'
+  } ]
+  @UI.lineItem: [ {
+    position: 66 ,
+    label: '税额标识'
+  } ]
+  @UI.selectionField: [ {
+    position: 66
+  } ]
+  SeFlag;
+
+  @UI.identification: [ {
+    position: 70
+  } ]
+  @UI.lineItem: [ {
+    position: 70
+  } ]
+  @UI.selectionField: [ {
+    position: 70
+  } ]
+  @EndUserText.label: '创建人'
+  CreatedBy;
+
+  @UI.identification: [ {
+    position: 80
+  } ]
+  @UI.lineItem: [ {
+    position: 80
+  } ]
+  @UI.selectionField: [ {
+    position: 80
+  } ]
+  @EndUserText.label: '创建时间'
+  CreatedAt;
+
+  @UI.identification: [ {
+    position: 90
+  } ]
+  @UI.lineItem: [ {
+    position: 90
+  } ]
+  @UI.selectionField: [ {
+    position: 90
+  } ]
+  @EndUserText.label: '更新人'
+  LastChangedBy;
+
+  @UI.identification: [ {
+    position: 100
+  } ]
+  @UI.lineItem: [ {
+    position: 100
+  } ]
+  @UI.selectionField: [ {
+    position: 100
+  } ]
+  @EndUserText.label: '更新时间'
+  LastChangedAt;
+}
